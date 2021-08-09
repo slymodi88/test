@@ -7,10 +7,10 @@ from carts.api.views import CartApi
 router = DefaultRouter()
 router.register('', views.CartApi, basename='cart')
 urlpatterns = router.urls
-urlpatterns += [
-    path('detail/', CartApi.as_view({'get': 'detail'})),
-    path('add/', CartApi.as_view({'post': 'add_product'}))
-
-]
+# urlpatterns += [
+#     path('details/', CartApi.as_view({'get': 'details'})),
+#     path('add/', CartApi.as_view({'post': 'add_product'}))
+#
+# ]
 
 
